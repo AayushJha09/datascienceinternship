@@ -8,9 +8,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
-import matplotlib
-from matplotlib import pyplot as plt
-import seaborn as sns
 
 lr = LogisticRegression(random_state=1)
 nb = MultinomialNB()
@@ -19,8 +16,7 @@ gbn = GradientBoostingClassifier(n_estimators = 10)
 rf = RandomForestClassifier(random_state=3)
 
 
-
-df = pd.read_csv('C:/Users/parab/OneDrive/Desktop/p3/Dataset4.csv')
+df = pd.read_csv("C:/Users/admi/Downloads/Wine Quality/winequalityN.csv")
 print(df)
 df.head()
 print(df)
